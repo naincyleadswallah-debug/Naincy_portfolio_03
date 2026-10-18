@@ -1,243 +1,713 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NP Digital Ads | Meta Ads Specialist</title>
-    <style>
-        :root {
-            --bg-dark: #090d16;
-            --card-bg: #111827;
-            --card-border: #1f2937;
-            --primary: #2563eb;
-            --accent: #16a34a;
-            --text-main: #f9fafb;
-            --text-muted: #9ca3af;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
+<title>NP Digital Ads | Meta Ads Freelancer</title>
 
-        body {
-            background-color: var(--bg-dark);
-            color: var(--text-main);
-            line-height: 1.6;
-        }
+<meta name="description" content="NP Digital Ads helps businesses grow through Facebook and Instagram advertising, audience targeting and campaign optimization.">
 
-        header {
-            background: radial-gradient(circle at top, #1e293b 0%, #090d16 100%);
-            padding: 6rem 2rem 4rem;
-            text-align: center;
-            border-bottom: 1px solid var(--card-border);
-        }
+<style>
+:root {
+  --blue: #155eef;
+  --dark: #102448;
+  --light: #f4f8ff;
+  --white: #ffffff;
+  --text: #526079;
+}
 
-        .badge {
-            display: inline-block;
-            background: rgba(37, 99, 235, 0.1);
-            color: #60a5fa;
-            padding: 0.4rem 1.2rem;
-            border-radius: 50px;
-            font-size: 0.85rem;
-            font-weight: 600;
-            margin-bottom: 1.2rem;
-            border: 1px solid rgba(37, 99, 235, 0.3);
-        }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
 
-        header h1 {
-            font-size: 3.2rem;
-            font-weight: 800;
-            color: #ffffff;
-            margin-bottom: 0.8rem;
-        }
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--white);
+  color: var(--dark);
+  line-height: 1.7;
+}
 
-        header p.subtitle {
-            font-size: 1.25rem;
-            color: var(--text-muted);
-            max-width: 650px;
-            margin: 0 auto 2rem;
-        }
+a {
+  text-decoration: none;
+}
 
-        .btn-primary {
-            display: inline-block;
-            background: var(--primary);
-            color: #ffffff;
-            padding: 0.9rem 2.2rem;
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 1rem;
-            transition: all 0.3s ease;
-        }
+.container {
+  width: 90%;
+  max-width: 1120px;
+  margin: auto;
+}
 
-        .btn-primary:hover {
-            background: #1d4ed8;
-            transform: translateY(-2px);
-        }
+header {
+  background: rgba(255,255,255,0.96);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid #e8eef8;
+}
 
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 4rem 1.5rem;
-        }
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 76px;
+  gap: 20px;
+}
 
-        section {
-            margin-bottom: 4rem;
-        }
+.logo {
+  font-size: 25px;
+  font-weight: 800;
+  color: var(--blue);
+  letter-spacing: -1px;
+}
 
-        .section-title {
-            font-size: 1.7rem;
-            font-weight: 700;
-            margin-bottom: 1.5rem;
-            color: #ffffff;
-            border-left: 4px solid var(--primary);
-            padding-left: 0.75rem;
-        }
+.logo span {
+  color: var(--dark);
+}
 
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 1.5rem;
-        }
+nav {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
 
-        .card {
-            background: var(--card-bg);
-            border: 1px solid var(--card-border);
-            border-radius: 12px;
-            padding: 2rem;
-        }
+nav a {
+  color: var(--dark);
+  font-size: 14px;
+  font-weight: 600;
+}
 
-        .card h3 {
-            font-size: 1.2rem;
-            color: #ffffff;
-            margin-bottom: 0.75rem;
-        }
+nav a:hover {
+  color: var(--blue);
+}
 
-        .card p, .card li {
-            color: var(--text-muted);
-            font-size: 0.95rem;
-        }
+.btn {
+  display: inline-block;
+  padding: 13px 23px;
+  background: var(--blue);
+  color: white;
+  border-radius: 9px;
+  font-weight: 700;
+  border: 2px solid var(--blue);
+  transition: 0.25s;
+}
 
-        ul {
-            padding-left: 1.2rem;
-        }
+.btn:hover {
+  background: #1048bf;
+  transform: translateY(-2px);
+}
 
-        li {
-            margin-bottom: 0.5rem;
-        }
+.btn-outline {
+  background: transparent;
+  color: var(--blue);
+}
 
-        .contact-card {
-            background: linear-gradient(135deg, #1e293b, #111827);
-            border: 1px solid var(--card-border);
-            border-radius: 16px;
-            padding: 3rem 2rem;
-            text-align: center;
-        }
+.btn-outline:hover {
+  color: white;
+}
 
-        .contact-card h2 {
-            font-size: 2rem;
-            margin-bottom: 1rem;
-            color: #ffffff;
-        }
+.hero {
+  background:
+    radial-gradient(circle at 90% 10%, #dce8ff 0, transparent 32%),
+    linear-gradient(135deg, #f5f8ff, #ffffff 70%);
+  padding: 100px 0 90px;
+}
 
-        .contact-card p {
-            color: var(--text-muted);
-            margin-bottom: 2rem;
-        }
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.3fr 0.7fr;
+  align-items: center;
+  gap: 55px;
+}
 
-        .contact-details {
-            display: inline-block;
-            background: var(--bg-dark);
-            padding: 1.5rem 2.5rem;
-            border-radius: 12px;
-            border: 1px solid var(--card-border);
-        }
+.tag {
+  display: inline-block;
+  background: #e6efff;
+  color: var(--blue);
+  border-radius: 30px;
+  padding: 7px 14px;
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 22px;
+}
 
-        .contact-details a {
-            color: #60a5fa;
-            text-decoration: none;
-            font-size: 1.1rem;
-            font-weight: 600;
-        }
+h1 {
+  font-size: clamp(38px, 5vw, 62px);
+  line-height: 1.12;
+  letter-spacing: -2px;
+  margin-bottom: 23px;
+}
 
-        footer {
-            text-align: center;
-            padding: 2.5rem;
-            border-top: 1px solid var(--card-border);
-            color: var(--text-muted);
-            font-size: 0.9rem;
-        }
-    </style>
+h1 span {
+  color: var(--blue);
+}
+
+.hero p {
+  max-width: 570px;
+  color: var(--text);
+  font-size: 17px;
+  margin-bottom: 28px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 13px;
+  flex-wrap: wrap;
+}
+
+.hero-card {
+  background: white;
+  padding: 35px 28px;
+  border: 1px solid #e6edfa;
+  border-radius: 24px;
+  box-shadow: 0 20px 60px rgba(21,94,239,0.12);
+  text-align: center;
+}
+
+.hero-icon {
+  width: 100px;
+  height: 100px;
+  display: grid;
+  place-items: center;
+  margin: 0 auto 20px;
+  border-radius: 25px;
+  background: linear-gradient(135deg, #155eef, #77a4ff);
+  color: white;
+  font-size: 38px;
+  font-weight: 800;
+}
+
+.hero-card h3 {
+  font-size: 23px;
+  margin-bottom: 8px;
+}
+
+.hero-card p {
+  font-size: 14px;
+  margin: 0;
+}
+
+section {
+  padding: 82px 0;
+}
+
+.section-title {
+  text-align: center;
+  max-width: 680px;
+  margin: 0 auto 45px;
+}
+
+.section-title h2 {
+  font-size: clamp(29px, 4vw, 40px);
+  line-height: 1.2;
+  margin-bottom: 15px;
+}
+
+.section-title h2 span {
+  color: var(--blue);
+}
+
+.section-title p {
+  color: var(--text);
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.about-box {
+  background: var(--light);
+  border: 1px solid #e2eaff;
+  border-radius: 20px;
+  padding: 30px;
+}
+
+.about-box h3 {
+  font-size: 24px;
+  margin-bottom: 14px;
+}
+
+.about-box p,
+.about-text p {
+  color: var(--text);
+  margin-bottom: 16px;
+}
+
+.about-text h3 {
+  font-size: 27px;
+  margin-bottom: 15px;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.skill {
+  padding: 8px 12px;
+  border-radius: 8px;
+  background: #e7efff;
+  color: #1648aa;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.services {
+  background: var(--light);
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 23px;
+}
+
+.card {
+  background: white;
+  padding: 30px 25px;
+  border-radius: 18px;
+  border: 1px solid #e7edf8;
+  transition: 0.25s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 35px rgba(16,36,72,0.08);
+}
+
+.card-icon {
+  width: 53px;
+  height: 53px;
+  display: grid;
+  place-items: center;
+  border-radius: 14px;
+  background: #e8efff;
+  color: var(--blue);
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.card h3 {
+  font-size: 19px;
+  margin-bottom: 12px;
+}
+
+.card p {
+  color: var(--text);
+  font-size: 14px;
+}
+
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.process-item {
+  padding: 25px;
+  border-left: 3px solid var(--blue);
+  background: #f8faff;
+  border-radius: 0 14px 14px 0;
+}
+
+.process-item .number {
+  color: var(--blue);
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.process-item h3 {
+  margin: 9px 0;
+}
+
+.process-item p {
+  color: var(--text);
+  font-size: 14px;
+}
+
+.work {
+  background: var(--light);
+}
+
+.work-box {
+  max-width: 780px;
+  margin: auto;
+  padding: 36px;
+  background: white;
+  border: 1px solid #e0e9fa;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.work-box h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.work-box p {
+  color: var(--text);
+  margin-bottom: 12px;
+}
+
+.contact-box {
+  background: linear-gradient(135deg, #102448, #155eef);
+  color: white;
+  border-radius: 25px;
+  text-align: center;
+  padding: 60px 30px;
+}
+
+.contact-box h2 {
+  font-size: clamp(30px, 4vw, 42px);
+  margin-bottom: 15px;
+}
+
+.contact-box p {
+  max-width: 600px;
+  margin: 0 auto 25px;
+  color: #e0e9ff;
+}
+
+.contact-box .btn {
+  background: white;
+  border-color: white;
+  color: var(--blue);
+}
+
+.contact-box .btn:hover {
+  background: #eaf0ff;
+}
+
+footer {
+  text-align: center;
+  padding: 28px 15px;
+  color: var(--text);
+  font-size: 13px;
+  border-top: 1px solid #edf1f8;
+}
+
+footer strong {
+  color: var(--blue);
+}
+
+@media (max-width: 800px) {
+  .navbar {
+    flex-direction: column;
+    padding: 16px 0;
+  }
+
+  nav {
+    justify-content: center;
+    gap: 14px;
+  }
+
+  .hero {
+    padding: 65px 0;
+  }
+
+  .hero-grid,
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .hero-card {
+    max-width: 430px;
+    width: 100%;
+    margin: auto;
+  }
+
+  .cards,
+  .process-grid {
+    grid-template-columns: 1fr;
+  }
+
+  section {
+    padding: 60px 0;
+  }
+}
+</style>
 </head>
+
 <body>
 
-    <header>
-        <span class="badge">META ADS EXPERT</span>
-        <h1>NP Digital Ads</h1>
-        <p class="subtitle">Specialized Meta Ads Management, Lead Generation & Conversion Tracking for Businesses.</p>
-        <a href="mailto:npdigitalads37@gmail.com?subject=Inquiry%20for%20Meta%20Ads%20Services" class="btn-primary">✉️ Email for Services</a>
-    </header>
+<header>
+  <div class="container navbar">
+    <a href="#home" class="logo">NP <span>Digital Ads</span></a>
 
-    <div class="container">
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#work">My Work</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
 
-        <!-- About Section -->
-        <section>
-            <h2 class="section-title">About NP Digital Ads</h2>
-            <div class="card">
-                <p>Founded by <strong>Naincy Pal</strong>, NP Digital Ads focuses exclusively on high-performance <strong>Meta (Facebook & Instagram) Advertising</strong>. Backed by a technical background in Bachelor of Computer Applications (BCA), we manage complete campaign execution, audience segmentation, and Meta Pixel setups to help businesses lower Cost Per Lead (CPL) and maximize results.</p>
-            </div>
-        </section>
+<main>
 
-        <!-- Meta Ads Services -->
-        <section>
-            <h2 class="section-title">Core Meta Ads Services</h2>
-            <div class="grid">
-                <div class="card">
-                    <h3>🎯 Lead Generation Campaigns</h3>
-                    <p>Designing targeted Facebook & Instagram ad funnels built to capture high-intent client leads for your business.</p>
-                </div>
-                <div class="card">
-                    <h3>⚙️ Meta Pixel & Event Setup</h3>
-                    <p>Technical integration of Meta Pixel, custom conversion events, and tracking parameters for precise attribution.</p>
-                </div>
-                <div class="card">
-                    <h3>🧪 Creative A/B Testing</h3>
-                    <p>Testing multiple ad variations (video, image, carousel) and copywriting to optimize CTR and lower CPL.</p>
-                </div>
-            </div>
-        </section>
+<section class="hero" id="home">
+  <div class="container hero-grid">
 
-        <!-- Experience -->
-        <section>
-            <h2 class="section-title">Experience & Expertise</h2>
-            <div class="card">
-                <ul>
-                    <li><strong>Meta Ads Manager at Leadswallah (4 Months):</strong> Managing day-to-day paid social campaigns, tracking performance metrics, and scaling top-performing ad sets.</li>
-                    <li><strong>Audience Targeting Mastery:</strong> Expert in building core, custom, and lookalike audiences to target the right buyers.</li>
-                    <li><strong>Data & Metrics Optimization:</strong> Continuous tracking and optimization of CPL, ROAS, CPM, and CTR.</li>
-                </ul>
-            </div>
-        </section>
+    <div>
+      <span class="tag">META ADS FREELANCER</span>
 
-        <!-- Contact Section -->
-        <div class="contact-card">
-            <h2>Let's Grow Your Business With Meta Ads</h2>
-            <p>Get in touch to discuss your campaign requirements and scale your lead generation.</p>
-            <div class="contact-details">
-                <span style="color: var(--text-muted); font-size: 0.85rem; display: block; margin-bottom: 0.3rem;">DIRECT EMAIL</span>
-                <a href="mailto:npdigitalads37@gmail.com?subject=Inquiry%20for%20Meta%20Ads%20Services">npdigitalads37@gmail.com</a>
-                <span style="color: var(--text-muted); font-size: 0.85rem; display: block; margin-top: 0.8rem;">📍 Kanpur, Uttar Pradesh, India</span>
-            </div>
-        </div>
+      <h1>
+        Grow Your Business with
+        <span>Smarter Ads.</span>
+      </h1>
 
+      <p>
+        Helping businesses reach the right audience through
+        strategic Facebook and Instagram advertising.
+        Let's work together to build your online presence.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#contact" class="btn">Let's Connect →</a>
+        <a href="#services" class="btn btn-outline">Explore Services</a>
+      </div>
     </div>
 
-    <footer>
-        <p>© 2026 NP Digital Ads (Founder: Naincy Pal). All rights reserved.</p>
-    </footer>
+    <div class="hero-card">
+      <div class="hero-icon">NP</div>
+      <h3>NP Digital Ads</h3>
+      <p>Smart Strategy. Relevant Audience. Meaningful Growth.</p>
+    </div>
+
+  </div>
+</section>
+
+<section id="about">
+  <div class="container">
+
+    <div class="section-title">
+      <h2>About <span>Me</span></h2>
+      <p>A little about who I am and how I can help your business.</p>
+    </div>
+
+    <div class="about-grid">
+
+      <div class="about-text">
+        <h3>Hello, I'm Naincy Pal! 👋</h3>
+
+        <p>
+          I'm a Meta Ads freelancer interested in helping
+          businesses improve their online visibility and connect
+          with potential customers.
+        </p>
+
+        <p>
+          My focus is on understanding business goals, selecting
+          relevant audiences, setting up campaigns and monitoring
+          performance to identify opportunities for improvement.
+        </p>
+
+        <p>
+          I believe in honest communication, continuous learning
+          and making advertising decisions based on campaign data.
+        </p>
+      </div>
+
+      <div class="about-box">
+        <h3>My Skills</h3>
+        <p>Skills I use in my advertising work:</p>
+
+        <div class="skills">
+          <span class="skill">Meta Ads Manager</span>
+          <span class="skill">Campaign Setup</span>
+          <span class="skill">Audience Targeting</span>
+          <span class="skill">Lead Generation</span>
+          <span class="skill">Campaign Monitoring</span>
+          <span class="skill">Ad Performance Analysis</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="container">
+
+    <div class="section-title">
+      <h2>My <span>Services</span></h2>
+      <p>Advertising support tailored to your business goals.</p>
+    </div>
+
+    <div class="cards">
+
+      <div class="card">
+        <div class="card-icon">📱</div>
+        <h3>Facebook & Instagram Ads</h3>
+        <p>
+          Campaign setup and management to help businesses
+          connect with relevant audiences on Meta platforms.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">🎯</div>
+        <h3>Audience Targeting</h3>
+        <p>
+          Researching suitable audience groups based on
+          business objectives, location and customer interests.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">📈</div>
+        <h3>Lead Generation</h3>
+        <p>
+          Supporting lead-focused campaigns designed to help
+          businesses connect with potential customers.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">🔎</div>
+        <h3>Campaign Monitoring</h3>
+        <p>
+          Reviewing available campaign metrics to understand
+          performance and identify areas for improvement.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">🧭</div>
+        <h3>Campaign Strategy</h3>
+        <p>
+          Planning campaign objectives and audience approaches
+          according to the business's marketing goals.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">💬</div>
+        <h3>Business Consultation</h3>
+        <p>
+          Discussing advertising goals, target customers and
+          campaign requirements before getting started.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+
+    <div class="section-title">
+      <h2>How I <span>Work</span></h2>
+      <p>A simple and transparent approach to campaign management.</p>
+    </div>
+
+    <div class="process-grid">
+
+      <div class="process-item">
+        <span class="number">STEP 01</span>
+        <h3>Understand</h3>
+        <p>
+          Learn about your business, customers and advertising goals.
+        </p>
+      </div>
+
+      <div class="process-item">
+        <span class="number">STEP 02</span>
+        <h3>Plan & Launch</h3>
+        <p>
+          Prepare a suitable campaign structure and launch
+          after the details are approved.
+        </p>
+      </div>
+
+      <div class="process-item">
+        <span class="number">STEP 03</span>
+        <h3>Monitor & Improve</h3>
+        <p>
+          Review campaign performance and look for opportunities
+          to improve results.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="work" id="work">
+  <div class="container">
+
+    <div class="section-title">
+      <h2>My <span>Work</span></h2>
+      <p>Practical learning and campaign experience.</p>
+    </div>
+
+    <div class="work-box">
+      <h3>Focused on Real Campaign Learning</h3>
+
+      <p>
+        My experience includes working with Meta advertising
+        campaigns and learning how campaign objectives, audience
+        selection and performance metrics influence advertising.
+      </p>
+
+      <p>
+        I'm continuing to build my portfolio through practical
+        experience and skill development.
+      </p>
+
+      <p>
+        Interested in working together? Let's discuss your goals
+        and see whether my services are a good fit.
+      </p>
+
+      <a href="#contact" class="btn">Discuss Your Project →</a>
+    </div>
+
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+
+    <div class="contact-box">
+      <h2>Let's Grow Together!</h2>
+
+      <p>
+        Have a business and want to explore Facebook or Instagram
+        advertising? Get in touch to discuss your requirements.
+      </p>
+
+      <a
+        class="btn"
+        href="mailto:npdigitalads37@gmail.com?subject=Meta%20Ads%20Inquiry"
+      >
+        ✉ Email Me
+      </a>
+
+      <p style="margin-top:22px;margin-bottom:0;font-size:14px;">
+        Instagram: @npdigitalads
+      </p>
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+<footer>
+  © 2026 <strong>NP Digital Ads</strong> · Created by Naincy Pal
+</footer>
 
 </body>
 </html>
